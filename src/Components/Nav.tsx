@@ -7,34 +7,42 @@ const Nav: React.FC = () => {
   return (
     <>
       {/* <Link to='/'> */}
-      <Navwrap>
-        <Logo />
-        <Profile>Profile</Profile>
-      </Navwrap>
+      <NavWrap />
+      <Logo />
+      <Menu name='PROFILE' />
+      <Menu name='SKILLSET' />
+      <Menu name='PROJECT' />
 
       {/* </Link> */}
     </>
   );
 };
-const Navwrap = styled.div`
-  position: relative;
- 
+const NavWrap = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #160044;
+  opacity: 0.4;
 `;
 const Logo = styled.img.attrs({
   src: `${logo}`,
 })`
   position: absolute;
+  top: 10px;
   width: 30px;
   margin: 0 10px;
-  // opacity: 1;
+  z-index: 99;
 `;
-const Profile = styled.button`
+const Menu = styled.button`
   // font-family: 'Padauk', sans-serif;
   // font-weight: bold;
+  position: absolute;
   font-family: "Notable", sans-serif;
+  bottom: 10px;
   padding: 10px;
   font-size: 1rem;
   color: white;
+  z-index: 99;
 `;
 
 export default Nav;
