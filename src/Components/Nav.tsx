@@ -7,17 +7,20 @@ const Nav: React.FC = () => {
   return (
     <>
       {/* <Link to='/'> */}
-      <NavWrap />
+      <NavCover />
       <Logo />
-      <Menu name='PROFILE' />
-      <Menu name='SKILLSET' />
-      <Menu name='PROJECT' />
+      <MenuItem>HONGYELIMPORTFORIOHONGYELIMPORTFORIO</MenuItem>
+      <MenuWrap>
+        <Menu>PROFILE</Menu>
+        <Menu>SKILLSET</Menu>
+        <Menu>PROJECT</Menu>
+      </MenuWrap>
 
       {/* </Link> */}
     </>
   );
 };
-const NavWrap = styled.div`
+const NavCover = styled.div`
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -29,20 +32,33 @@ const Logo = styled.img.attrs({
 })`
   position: absolute;
   top: 10px;
+  left: 10px;
   width: 30px;
-  margin: 0 10px;
   z-index: 99;
 `;
-const Menu = styled.button`
-  // font-family: 'Padauk', sans-serif;
-  // font-weight: bold;
-  position: absolute;
+
+const MenuWrap = styled.button`
+  position: fixed;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  left: 10%;
+  bottom: 20px;
   font-family: "Notable", sans-serif;
-  bottom: 10px;
+`;
+const MenuItem = styled.button`
+  font-family: "Padauk", sans-serif;
+  // font-weight: bold;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 0.2rem;
   color: white;
-  z-index: 99;
+`;
+const Menu = styled.button`
+  // font-weight: bold;
+  font-family: "Notable", sans-serif;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: white;
 `;
 
 export default Nav;
