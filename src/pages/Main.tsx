@@ -15,5 +15,6 @@ const Main: React.FC = () => {
 const Wrap = styled.div`
   position: relative;
   height: 100vh;
+  overflow: hidden;
 `;
 export default Main;
