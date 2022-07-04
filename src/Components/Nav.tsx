@@ -6,7 +6,7 @@ import logo from "../Assets/Images/signlogo.svg";
 const Nav: React.FC = () => {
   return (
     <>
-      {/* <Link to='/'> */}
+      
       <NavCover />
       <Logo />
       <MenuItem>HONGYELIMPORTFORIOHONGYELIMPORTFORIO</MenuItem>
@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
         <Menu>PROJECT</Menu>
       </MenuWrap>
 
-      {/* </Link> */}
+      
     </>
   );
 };
