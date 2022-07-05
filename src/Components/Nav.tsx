@@ -25,7 +25,6 @@ import logo from "../Assets/Images/signlogo.svg";
 // }  
 
 const Nav: React.FC = () => {
-  
   return (
     <>
       <NavCover />
@@ -76,6 +75,7 @@ const ModeBtn = styled.button`
     height: 35px;
     background-color: #1F2333;
     border-radius: 50%;
+    cursor:pointer;
   }
 `;
 
